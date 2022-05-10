@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Money</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <a id="abrir" href="#" onclick="abrir()">&#9776;</a>
+        <h1>Sugar Money</h1>
+    </header>
+    <nav>
+        <a id="fechar" href="#" onclick="fechar()">&times;</a>
+        <ul>
+            <li><a href="index.html">Início</a>
+                <a href="cadastro.html">Cadastro/Pedidos</a>
+                <a href="sugar.html">Nossos Colaboradores</a>
+                <a href="contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+    <h2>Conheça alguns de nossos colaboradores</h2>
+    <div id="linha">
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://odia.ig.com.br/_midias/jpg/2022/04/25/1669291_silvio_santos_tem_plano_de_transferir_e_624x600_3-25016671.jpg" alt="">
+                <h3>Silvio Santos</h4>
+            </div>
+        </div>
+
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://static1.purepeople.com.br/articles/8/31/99/38/@/3609345-faustao-recusou-gravar-video-curto-e-edi-624x600-1.jpg" alt="">
+                <h3>Faustão</h3>
+            </div>
+        </div>
+
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/4f1a09bf-6f64-4d33-8290-f4f59d2d81bd/ElonMusk_2017-stageshot.jpg" alt="">
+                <h3>Elon Musk</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="linha">
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://classic.exame.com/wp-content/uploads/2021/05/LULA-RICARDO-STUCKERT.jpg?quality=70&strip=info&w=1024" alt="">
+                <h3>Lula</h4>
+            </div>
+        </div>
+
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://jpimg.com.br/uploads/2021/11/fta20211124311.jpg" alt="">
+                <h3>Jair bozonaro</h3>
+            </div>
+        </div>
+
+        <div id="colaboradores">
+            <div id="imgcolab">
+                <img src="https://www.revistainternet.com.br/wp-content/uploads/2011/12/PrinceAlwaleedbinTalal-twitter.jpg" alt="">
+                <h3>Alaeed bin talal</h4>
+            </div>
+        </div>
+    </div>
+
+    
+
+    </main>
+
+    <footer>
+        <div id="endereco">
+            Av. Paulista, 1106 <br>
+            Bela Vista - SP - CEP: 01311-000 <br>
+            Telefone: (11) 3385-8010
+
+
+        </div>
+
+        <div id="redes"> 
+            <ul>
+                <li><a href="http://www.facebook.com"target="_blank"><img src="img/facebook.png" alt="Acesse nosso facebook"></a></li>
+                <li><a href="http://www.instagram.com"target="_blank"><img src="img/instagram.png" alt="Acesse nosso instagram"></a></li>
+                <li><a href="http://www.youtube.com"target="_blank"><img src="img/youtube.png" alt="Acesse nosso canal no youtube"></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script>
+        function abrir(){
+            document.getElementsByTagName("nav")[0].style.left="0px";
+        }
+
+        function fechar(){
+            document.getElementsByTagName("nav")[0].style.left="-200px";
+        }
+    </script>
+
+    <!-- <script src="javascript/js.js"></script> -->
+</body>
+</html>

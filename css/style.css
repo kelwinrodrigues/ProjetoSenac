@@ -31,13 +31,11 @@ nav ul li a {
   margin: 20px;
 }
 
-
 h1 {
   font-size: 35pt;
   font-family: "Verdana";
   text-shadow: 3px 2 3px 5px rgb(43, 40, 40);
 }
-
 
 h2 {
   font-size: 25pt;
@@ -71,10 +69,10 @@ main p {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
+  text-align: left;
   font-family: "times new romam";
   font-size: 15pt;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 footer {
@@ -118,8 +116,8 @@ footer {
 }
 
 #imgInicio img {
-  width: 500px;
-  height: 400px;
+  width: 380px;
+  height: 300px;
   border-radius: 60px;
   /* opacity: 0.7; */
   margin: 20px;
@@ -128,14 +126,13 @@ footer {
 
 #imgInicio img:hover {
   cursor: pointer;
-  /* transform: scale(1.2); */
+  transform: scale(1);
 }
 
 #daddies {
   text-align: left;
   margin-left: 180px;
 }
-
 
 #linha-horizontal1 {
   width: 950px;
@@ -144,10 +141,205 @@ footer {
   margin-right: auto;
 }
 
-#linha-horizontal2{
-  width: 500px;
+#linha-horizontal2 {
+  width: 400px;
   border: 1px dashed #000;
   margin-left: 180px;
   margin-right: auto;
+}
 
+/*                        CADASTRO               */
+main form {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  box-shadow: 5px 5px 15px silver;
+}
+
+main form input,
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-family: "Times new romam";
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  background-color: rgb(248, 241, 241);
+}
+
+main form input[type="tel"],
+[type="email"] {
+  width: 49%;
+}
+
+main form input[type="number"] {
+  width: 15%;
+}
+/* main form input[type="email"],
+main form select {
+  width: 49%;
+} */
+
+#enderecocad {
+  height: 33px;
+  width: 84%;
+  padding: 8px;
+  margin-bottom: 9px;
+  font-family: "times new roman";
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  color: black;
+}
+
+/*                                  SUGAR                     */
+#linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#linha #colaboradores {
+  width: 32%;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+#linha #colaboradores #imgcolab,
+#linha #colaboradores #descricao {
+  padding-top: 20px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease 0.5s;
+}
+
+#linha #colaboradores #imgcolab img {
+  width: 110%;
+  height: 340px;
+  border-radius: 8px;
+}
+
+/* ========================================== Área de responsividade =============================================== */
+#abrir,
+#fechar {
+  display: none;
+}
+
+/* Telas de smartphones */
+@media (min-width: 0px) and (max-width: 576px) {
+  header {
+    width: 100%;
+    height: 200px;
+    background-position-y: -150px;
+    background-size: 190%;
+    padding-top: 90px;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+
+  nav {
+    width: 200px;
+    height: 100vh; /* Viewport height (altura do dispositivo */
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    padding-top: 140px;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  nav ul li a {
+    font-size: 17pt;
+  }
+
+  #abrir {
+    background-color: black;
+    padding: 0px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+
+  #fechar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30pt;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+  }
+
+  #imgInicio img {
+    width: 80%;
+    height: 90%;
+    border-radius: 70px;
+  }
+
+  #imgInicio img:hover {
+    opacity: 1;
+    width: 90%;
+    height: 100%;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    padding: 0px;
+  }
+
+  footer #redes {
+    position: relative;
+    right: auto;
+  }
+
+  #endereco,
+  #rede {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* #imghistoria img {
+    width: 46%;
+    height: auto;
+  } */
+
+  #linha {
+    flex-direction: column;
+  }
+
+  #linha #colaboradores {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #linha #colaboradores #imgcolab,
+  #linha #colaboradores #descricao {
+    width: 90%;
+    margin: 10px;
+    transition: ease 0.5s;
+  }
+
+  main form {
+    width: 90%;
+  }
 }
