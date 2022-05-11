@@ -7,7 +7,7 @@
 header {
   height: 310px;
   background-image: url("https://img.freepik.com/fotos-gratis/mao-segurando-um-cartao-de-credito_23-2148775917.jpg?w=2000");
-  background-size: 97%;
+  background-size: 95%;
   padding-top: 100px;
   background-position-y: -290px;
   background-position-x: -180px;
@@ -52,7 +52,6 @@ h2 {
 }
 
 h3 {
-  width: 650px;
   padding: 20px;
   font-size: 16pt;
   font-family: "verdana";
@@ -99,9 +98,6 @@ footer {
   height: 110px;
 }
 
-#endereco:hover {
-  cursor: pointer;
-}
 #endereco {
   font-family: "Times new romam";
   font-size: 12pt;
@@ -145,7 +141,7 @@ footer {
 
 #imgInicio img:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 #daddies {
@@ -279,6 +275,7 @@ main form input[type="number"] {
   padding-top: 100px;
 }
 #linha #contato h3 {
+  width: 600px;
   margin-left: 200px;
   padding-bottom: 50px;
 }
