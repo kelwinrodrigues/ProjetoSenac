@@ -4,37 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugar Money</title>
+    <title>Buy4Me</title>
 
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <a id="abrir" href="#" onclick="abrir()">&#9776;</a>
-        <h1>Sugar Money</h1>
+        <h1>Buy4Me</h1>
+        <h4>Seus pedidos em apenas um click</h4>
     </header>
     <nav>
-        <a id="fechar" href="#" onclick="fechar()">&times;</a>
         <ul>
             <li><a href="index.html">Início</a>
                 <a href="pedido.html">Pedido</a>
-                <a href="sugar.html">Colaboradores</a>
+                <a href="colab.html">Colaboradores</a>
                 <a href="contato.html">Contato</a>
             </li>
         </ul>
     </nav>
 
     <main>
-       <h3>Entre em contato conosco</h3>
+    <div id="titulos">
+        <div id="titulo1">
+            <h3>Entre em contato conosco</h3>
+        </div>
+        <div id="titulo2">
+            <h3>Estamos localizados aqui:</h3> 
+        </div>
+    </div>
+
+
+
+    <div id="linha">
+
+        <div id="contato">
+       <h4>WhatsApp: (11) 98617-5889</h4>
+       <h5>Horário de atendimento: De segunda a sexta-feira, Das 8h às 17h</h5>
+       <br>
+       <h4>Email: buy4meOfc@gmail.com</h4>
+       <br>
+        <h4>Central de atendimento</h4>
+       <h5>0800 2703 5489</h5>
+       <h5>Horário de atendimento: De segunda a sabádo, Das 8h às 19h</h5>
+        </div>
+
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12674.491467206431!2d-122.09294303022457!3d37.42238799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba027f087f8f%3A0xd86b06710e8fcc35!2sGoogle%20Building%2040%2C%201600%20Amphitheatre%20Pkwy%2C%20Mountain%20View%2C%20CA%2094043%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1652273236401!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
        
     </main>
     <footer>
         <div id="endereco">
-            Av. Paulista, 1106 <br>
-            Bela Vista - SP - CEP: 01311-000 <br>
-            Telefone: (11) 3385-8010
-
-
+            BUY FOR ME <br>
+            Terms of Use - Privacy Policy <br>
+            © 2018 Clarity money
         </div>
 
         <div id="redes"> 
@@ -46,16 +70,6 @@
         </div>
 
     </footer>
-
-    <script>
-        function abrir(){
-            document.getElementsByTagName("nav")[0].style.left="0px";
-        }
-
-        function fechar(){
-            document.getElementsByTagName("nav")[0].style.left="-200px";
-        }
-    </script>
 
     <!-- <script src="javascript/js.js"></script> -->
 </body>

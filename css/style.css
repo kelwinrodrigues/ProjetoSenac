@@ -5,11 +5,18 @@
 }
 
 header {
-  height: 250px;
-  background-image: url("https://s1.1zoom.me/big3/525/Dollars_Banknotes_Money_443093.jpg");
-  background-size: 100%;
+  height: 310px;
+  background-image: url("https://img.freepik.com/fotos-gratis/mao-segurando-um-cartao-de-credito_23-2148775917.jpg?w=2000");
+  background-size: 95%;
   padding-top: 100px;
+  background-position-y: -290px;
+  background-position-x: -180px;
   text-align: center;
+}
+
+header h4 {
+  margin-left: 700px;
+  text-shadow: 10px 2px 3px 5px black;
 }
 
 nav {
@@ -28,13 +35,13 @@ nav ul li a {
   color: white;
   font-family: "Times new Romam";
   text-decoration: none;
-  margin: 20px;
+  margin: 35px;
 }
 
 h1 {
-  font-size: 35pt;
+  font-size: 55pt;
   font-family: "Verdana";
-  text-shadow: 3px 2 3px 5px rgb(43, 40, 40);
+  text-shadow: 3px 2px 3px 5px rgb(43, 40, 40);
 }
 
 h2 {
@@ -56,6 +63,13 @@ h4 {
   font-size: 15pt;
   text-align: left;
   margin-left: 190px;
+}
+
+h5 {
+  font-size: 12pt;
+  text-align: left;
+  margin-left: 190px;
+  font-weight: lighter;
 }
 
 main {
@@ -84,12 +98,16 @@ footer {
   height: 110px;
 }
 
+#endereco:hover {
+  cursor: pointer;
+}
 #endereco {
   font-family: "Times new romam";
-  font-size: 13pt;
-  color: white;
+  font-size: 12pt;
+  color: silver;
   width: 300px;
   text-align: center;
+  opacity: 1;
 }
 
 #redes {
@@ -126,7 +144,7 @@ footer {
 
 #imgInicio img:hover {
   cursor: pointer;
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 #daddies {
@@ -178,10 +196,6 @@ main form input[type="tel"],
 main form input[type="number"] {
   width: 15%;
 }
-/* main form input[type="email"],
-main form select {
-  width: 49%;
-} */
 
 #enderecocad {
   height: 33px;
@@ -195,164 +209,83 @@ main form select {
   color: black;
 }
 
-/*                                  SUGAR                     */
-#linha {
+/*                                  colaboradores                    */
+#linhacolab {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 50%;
+  margin: auto;
 }
 
-#linha #colaboradores {
-  width: 32%;
-  margin: 0px;
-  display: flex;
-  flex-direction: row;
-}
-
-#linha #colaboradores #imgcolab,
-#linha #colaboradores #descricao {
-  padding-top: 20px;
-  width: 75%;
+#linhacolab #imgcolab,
+#linhacolab #desccolab {
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  transition: ease 0.5s;
+  padding-bottom: 80px;
+  padding-top: 50px;
 }
 
-#linha #colaboradores #imgcolab img {
-  width: 110%;
-  height: 340px;
-  border-radius: 8px;
+#linhacolab #imgcolab img {
+  width: 50%;
 }
 
-#ppedido{
+#linhacolab #desccolab h3 {
+  font-size: 25pt;
+}
+
+#linhacolab #desccolab p {
+  text-align: left;
+}
+
+/*                                  jsnvsdvnfvnnvx                              */
+
+#ppedido {
   font-size: 12pt;
-  width:100%;
+  width: 100%;
   text-align: center;
 }
-/* ========================================== Área de responsividade =============================================== */
-#abrir,
-#fechar {
-  display: none;
+
+#linha {
+  display: flex;
 }
 
-/* Telas de smartphones */
-@media (min-width: 0px) and (max-width: 576px) {
-  header {
-    width: 100%;
-    height: 200px;
-    background-position-y: -150px;
-    background-size: 190%;
-    padding-top: 90px;
-  }
-  h1 {
-    font-size: 25pt;
-  }
+#mapa {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  nav {
-    width: 200px;
-    height: 100vh; /* Viewport height (altura do dispositivo */
-    position: absolute;
-    top: 0px;
-    left: -200px;
-    padding-top: 160px;
-  }
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
 
-  nav ul li {
-    display: block;
-    text-align: left;
-    margin-bottom: 35px;
-  }
+#titulos {
+  display: flex;
+  justify-content: center;
+}
+#titulo1 {
+  margin: 20px;
+  justify-content: left;
+}
 
-  nav ul li a {
-    font-size: 15pt;
+#titulo2 {
+  margin: 20px;
+}
 
-  }
+#linha #contato {
+  padding-top: 100px;
+}
+#linha #contato h3 {
+  margin-left: 200px;
+  padding-bottom: 50px;
+}
 
-  #abrir {
-    background-color: black;
-    padding: 0px;
-    font-size: 20pt;
-    display: block;
-    text-decoration: none;
-    color: white;
-    width: 35px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-  }
+#linha #contato h4 {
+  font-size: 15pt;
+}
 
-  #fechar {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 30pt;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    display: block;
-    width: 50px;
-  }
-
-  #imgInicio img {
-    width: 80%;
-    height: 90%;
-    border-radius: 70px;
-  }
-
-  #imgInicio img:hover {
-    opacity: 1;
-    width: 90%;
-    height: 100%;
-  }
-
-  footer {
-    display: block;
-    text-align: center;
-    padding: 0px;
-  }
-
-  footer #redes {
-    position: relative;
-    right: auto;
-  }
-
-  #endereco,
-  #rede {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  /* #imghistoria img {
-    width: 46%;
-    height: auto;
-  } */
-
-  #linha {
-    flex-direction: column;
-  }
-
-  #linha #colaboradores {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  #linha #colaboradores #imgcolab,
-  #linha #colaboradores #descricao {
-    width: 90%;
-    margin: 10px;
-    transition: ease 0.5s;
-  }
-
-  main form {
-    width: 90%;
-  }
-  
-  main form input[type=number]{
-    width:15%
-  }
-  #enderecocad{
-    width: 80%;
-  }
+#linha #contato h5 {
+  font-size: 14pt;
 }
