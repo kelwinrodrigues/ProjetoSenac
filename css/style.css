@@ -226,6 +226,11 @@ main form select {
   border-radius: 8px;
 }
 
+#ppedido{
+  font-size: 12pt;
+  width:100%;
+  text-align: center;
+}
 /* ========================================== Área de responsividade =============================================== */
 #abrir,
 #fechar {
@@ -251,17 +256,18 @@ main form select {
     position: absolute;
     top: 0px;
     left: -200px;
-    padding-top: 140px;
+    padding-top: 160px;
   }
 
   nav ul li {
     display: block;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   nav ul li a {
-    font-size: 17pt;
+    font-size: 15pt;
+
   }
 
   #abrir {
@@ -341,5 +347,12 @@ main form select {
 
   main form {
     width: 90%;
+  }
+  
+  main form input[type=number]{
+    width:15%
+  }
+  #enderecocad{
+    width: 80%;
   }
 }

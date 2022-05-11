@@ -10,76 +10,23 @@
 </head>
 <body>
     <header>
+        <a id="abrir" href="#" onclick="abrir()">&#9776;</a>
         <h1>Sugar Money</h1>
     </header>
     <nav>
+        <a id="fechar" href="#" onclick="fechar()">&times;</a>
         <ul>
             <li><a href="index.html">Início</a>
-                <a href="cadastro.html">Cadastro/Pedidos</a>
-                <a href="sugar.html">Nossos Colaboradores</a>
+                <a href="pedido.html">Pedido</a>
+                <a href="sugar.html">Colaboradores</a>
                 <a href="contato.html">Contato</a>
             </li>
         </ul>
     </nav>
 
     <main>
-        <h2>Bem vindo ao Mundo Sugar</h2>
-        <br>
-        <p><span>.Você é pobre? Já desejou comprar alguma coisa e não teve dinheiro suficiente?</span></p>
-        <p><span>.E se houvesse um meio de conquistar essas coisas sem gastar nada? Parece impossível, mas não é!</span></p>
-        <p><span>.Com o Sugar Money, você solicita oque deseja e homens que tem muito dinheiro irão fazer a compra para você!</span></p>
-        <p><span>Esses homens são conhecidos como Sugar Daddy, vamos falar um pouco sobre eles?</span></p>
-        <br>
-        <br>
-
-        <div id="linha-horizontal1"></div>
-        <br>
-
-    <div>
-        <h3>O que é um Sugar Daddy?</h3>
-        <p><span>O verdadeiro Sugar Daddy é um homem experiente, confiante, bem-sucedido, que trabalha muito, e por isso, é muito próspero. Um Daddy gosta de compartilhar suas riquezas, conhecimentos e momentos com sua Sugar Baby.
-            <br>
-            Isso quer dizer que todo homem maduro e rico é um Sugar Daddy? Não!
-            <br>
-            O fator generosidade é, normalmente, o que pode diferenciar um Sugar Daddy de um Salt Daddy (termo que caracteriza um Daddy mão-de-vaca).
-            <br>
-            Portanto, quando um(a) jovem, determinado(a) e com objetivos esclarecidos, um(a) Sugar Baby, procura por um homem maduro, generoso, com um networking muito bem estabelecido, um Sugar Daddy, se espera aprender coisas novas, ganhar mimos e viver momentos incríveis em viagens pelo mundo!</span></p>
-        <br>
-        <br>
-        <h3 id="daddies">.O que os sugar daddies proporcioam?</h3>
-        <br>
-        <h4>Viagens fantásticas, mimos e presentes.</h4>
-        <p><span>Muitos Sugar Daddies gostam de viajar e por conta de seus trabalhos estão constantemente em viagens pelo mundo. Viagens de negócios são ótimas oportunidades para conhecer lugares novos e românticos com seu(sua) Sugar Baby.</span></p>
-        <br>
-        <br>
-        <div id="linha-horizontal2"></div>
-        <br>
-        <br>
-        <h4>Estabilidade e networking.</h4>
-        <p><span>Sugar Daddies são bem relacionados e possuem conexões com pessoas poderosas de diversos ramos, portanto podem proporcionar oportunidades únicas. Isso impulsionará o crescimento pessoal e profissional de seu(sua) Sugar Baby.</span></p>
-        <br>
-        <br>
-        <div id="linha-horizontal2"></div>
-        <br>
-        <br>
-        <h4>Relacionamento maduro, sem joguinhos.</h4>
-        <p><span>Sugar Daddies são homens maduros e experientes, que por conta de uma rotina atarefada, não possuem tempo para os chamados joguinhos. Um verdadeiro relacionamento Sugar é baseado na transparência de ambas as partes e em benefícios mútuos. Todo mundo sai ganhando!</span></p>
-        <br>
-        <div id="linha-horizontal1"></div>
-        <br>
-        <br>
-        <p><span>Agora você sabe oque é um sugar daddy, mas não se engane, sugar money não é um site para conseguir um sugar daddy.</span></p>
-        <p><span>A idéia do sugar money é se conectar com pessoas de altissíma classe através de uma tela, pessoas que tem dinheiro mas não tem com o que gastar, basta apenas pedir e esperar!</span></p>
-        <br>
-        <br>
-        <h4>Eai, vamos surfar na riqueza?</h4>
-    </div>
-
-        
-        <div id="imgInicio">
-            <img src="https://siterg.uol.com.br/wp-content/uploads/2019/07/630sugar-daddy-divulgacao-1280x720.jpg" alt="">
-            <img src="https://s2.glbimg.com/gFNC1ObWVSKEFNDLmCSiscOwb78=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2017/g/7/t0WydYTtO4EmmCvHz8Sg/bibi-3.jpg" alt="">
-        </div>
+       <h3>Entre em contato conosco</h3>
+       
     </main>
     <footer>
         <div id="endereco">
@@ -100,6 +47,16 @@
 
     </footer>
 
-    <script src="javascript/js.js"></script>
+    <script>
+        function abrir(){
+            document.getElementsByTagName("nav")[0].style.left="0px";
+        }
+
+        function fechar(){
+            document.getElementsByTagName("nav")[0].style.left="-200px";
+        }
+    </script>
+
+    <!-- <script src="javascript/js.js"></script> -->
 </body>
 </html>

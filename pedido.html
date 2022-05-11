@@ -10,28 +10,31 @@
 </head>
 <body>
     <header>
+        <a id="abrir" href="#" onclick="abrir()">&#9776;</a>
         <h1>Sugar Money</h1>
     </header>
     <nav>
+        <a id="fechar" href="#" onclick="fechar()">&times;</a>
         <ul>
             <li><a href="index.html">Início</a>
-                <a href="cadastro.html">Cadastro/Pedidos</a>
-                <a href="sugar.html">Nossos Colaboradores</a>
+                <a href="pedido.html">Pedido</a>
+                <a href="sugar.html">Colaboradores</a>
                 <a href="contato.html">Contato</a>
             </li>
         </ul>
     </nav>
 
     <main>
-    <h3>Novo cadastro</h3>
+    <h3>Faça seu Pedido</h3>
+    <p id="ppedido"><span>solicite algo e aguarde um colaborador aceitar</span></p>
     
     <form>
-        <select>
+        <!-- <select>
             <option value="Selecione"> Selecione </option>
             <option value="Sugestão"> Cadastrar </option>
             <option value="Crítica"> Solicitar pedido </option>
             <option value="Elogio"> Outro </option>
-        </select>
+        </select> -->
 
         <input type="text" placeholder="Nome Completo" required>
         <input type="email" placeholder="E-mail" required>
@@ -66,6 +69,16 @@
 
     </footer>
 
-    <script src="javascript/js.js"></script>
+    <script>
+        function abrir(){
+            document.getElementsByTagName("nav")[0].style.left="0px";
+        }
+
+        function fechar(){
+            document.getElementsByTagName("nav")[0].style.left="-200px";
+        }
+    </script>
+
+    <!-- <script src="javascript/js.js"></script> -->
 </body>
 </html>
